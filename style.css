@@ -584,6 +584,18 @@ img {
 }
 
 /* INTERIOR PACKAGE */
+.package__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.package__theme {
+  padding: 3rem 6rem;
+  display: flex;
+  gap: 0.5rem;
+  max-width: 1500px;
+  width: 100%;
+}
 .package__wrapper h1{
   color: var(--clr-primary);
   font-size: 6rem;
@@ -591,7 +603,6 @@ img {
   text-align: center;
 }
 .package__theme{
-  padding: 3rem 25rem;
   display: flex;
   flex-direction: row;
 
@@ -625,13 +636,239 @@ img {
 }
 
 
-
 /* UPDATES */
+.updates{
+  padding: 50px 0;
+}
+.updates_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.updates_content{
+  padding: 40px 0;
+  max-width: 500px;
+  width: 100%;
+}
+.updates_content h1{
+  text-align: center;
+  font-size: 6rem;
+  color: var(--clr-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.updates_content p{
+  display: flex;
+  text-align: justify;
+  padding-top:  30px;
+}
 
-
-
+/* DESIGNS */
+.designs{
+  padding: 50px 0;
+}
+.designs h2{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.designs_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.designs_main h3{
+  color: var(--clr-secondary);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.designs_card{
+  display: grid;
+  grid-template-columns: 40rem 40rem;
+  grid-gap: 20px;
+}
+.designs_card p{
+  padding: 20px;
+  text-align: justify;
+}
+.designs_card h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.designs_card .card{
+  width: 40rem;
+  height: 27rem;
+  padding: 4rem;
+   text-align: center;
+  background: var(--clr-semilight);
+}
+.designs_card .card a{
+margin-bottom: 3rem;
+font-size: 3.5rem;
+color: var(--clr-dark);
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;  
+}
+.designs_card .card h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.designs_sidebar h3{
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--clr-secondary);
+}
+.designs_sidebar ul li{
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.projects{
+  padding: 50px;
+}
+.projects h2{
+margin-bottom: 20px;
+text-align: center;
+color: var(--clr-primary);
+font-size: 3rem;
+font-weight: bold;
+}
+.projects_wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 20px;
+}
+.projects_wrapper img{
+  width: 100%;
+  margin-bottom: 10px
+}
+.projectCard ul{
+display: flex;
+justify-content: space-between;
+}
+.projectCard ul li{
+font-size: 2rem;
+font-weight: 700;
+}
 
 /* CONTACTS BANNER */
+
+.contactBanner{
+  padding: 2rem 0;
+}
+.contact__wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 50px;
+}
+
+
+.contactBanner h2{
+  color: var(--clr-primary);
+ 
+  font-size: 5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+
+}
+.contactBanner p{
+  font-weight: 500;
+}
+
+.contact__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+.contact__form input{
+border: none;
+outline: none;
+background-color: transparent;
+width: 90%;
+border-bottom: 1px solid var(--clr-dark);
+padding: 3rem 0;
+} 
+.contact__form textarea{
+resize: none;
+border: none;
+outline: none;
+background-color: transparent;
+width: 90%;
+border-bottom: 1px solid var(--clr-dark);
+margin-bottom: 5rem;
+max-height: 400rem;
+padding-bottom: 7rem;
+font-style: var(--clr-semi-light);
+
+} 
+.contact__form {
+  margin-top: 7rem;
+}
+
+.contactBanner h1{
+  display: flex;
+  justify-self: center;
+  color: var(--clr-light);
+  font-size: 5rem;
+  margin: 20px 50px;
+  font-weight: 700;
+  margin-top: 6rem;
+
+}
+  .contact__info {
+    background-color: var(--clr-dark);
+    padding-bottom: 10rem;
+    margin-bottom: 30rem;
+    max-height: 48.5rem;
+    align-items: center;
+  }
+.contact__info ul li {
+  color: var(--clr-light);
+  margin: 40px 50px;
+
+ 
+}
+.contact__info i{
+  color: var(--clr-secondary);
+  margin-right: 20px;
+  font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* REPEATER */
 .btn {
@@ -658,3 +895,19 @@ img {
   color: var(--clr-primary);
 }
 
+
+.btn.bg--semi-light-send{
+  padding-left: 20rem;
+  padding-right: 20rem;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  letter-spacing: 2rem;
+  text-align: center;
+
+}
+  .btn.bg--semi-light-send:hover{
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  letter-spacing: 2rem;
+  text-align: center;
+  }
